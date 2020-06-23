@@ -1,0 +1,25 @@
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        float: left;
+        margin: 0;
+        margin-left: 40%;
+    }
+    .navbar-nav.navbar-right:last-child {
+        margin-right: -15px;
+        margin-left: 0;
+    }
+}
+nav.navbar{
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+ 
+.navbar-inverse {
+    // background-color: #222;
+    // border-color: #080808;
+    background-color:rgba(255, 134, 134, 0) !important;
+}
