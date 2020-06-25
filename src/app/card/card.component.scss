@@ -1,4 +1,4 @@
-.experience {
+.card {
     display: block;
     width: 60%;
     height: auto;
@@ -13,4 +13,10 @@
     border-radius: 25px;
     border: 2px solid #011627;
     // padding: 20px;
+}
+
+.card-img {
+    width: 300px;
+    border-radius: 25px;
+    border: 2px solid #011627;
 }

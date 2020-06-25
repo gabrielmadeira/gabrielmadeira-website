@@ -1,14 +1,16 @@
 <div class="col">
-  <div class="experience">
+  <div class="card">
     <div class="row">
       <div class="col">
-        Img
+        <img src="{{ imgUrl }}" class="card-img">
       </div>
       <div class="col">
-        <h4>Institution</h4>
-        <h5>Role</h5>
+        <h4>{{ institution }}</h4>
+        <h5>{{ title }}</h5>
+        <h6>{{ period }}</h6>
+        <h6>{{ location }}</h6>
         <span>
-          Description
+          {{ description }}
         </span>
       </div>
     </div>
