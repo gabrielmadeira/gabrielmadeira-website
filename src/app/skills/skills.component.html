@@ -1,42 +1,27 @@
 <div class="row">
   <div class="content"></div>
-</div>
-
-<div class="row">
-  <div class="row text-center">
-    <div class="col text-center">
-      <div class="row">
-        <div class="col-sm-2">HTML</div>
-        <div class="col">
-          <a class="fa fa-star checked"></a>
-          <a class="fa fa-star checked"></a>
-          <a class="fa fa-star checked"></a>
-          <a class="fa fa-star"></a>
-          <a class="fa fa-star"></a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-2">HTML</div>
-        <div class="col">
-          <a class="fa fa-star checked"></a>
-          <a class="fa fa-star checked"></a>
-          <a class="fa fa-star checked"></a>
-          <a class="fa fa-star"></a>
-          <a class="fa fa-star"></a>
-        </div>
+  <div class="col text-center star-skills">
+    <div class="row" *ngFor="let skill of skillList1">
+      <div class="col-sm-2">{{ skill.name }}</div>
+      <div class="col">
+        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 1)}"></a>
+        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 2)}"></a>
+        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 3)}"></a>
+        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 4)}"></a>
+        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 5)}"></a>
       </div>
     </div>
-    <div class="col text-center">
-      <div class="row">
-        <div class="col-sm-2">CSS</div>
-        <div class="col">
-          <a class="fa fa-star checked"></a>
-          <a class="fa fa-star checked"></a>
-          <a class="fa fa-star checked"></a>
-          <a class="fa fa-star"></a>
-          <a class="fa fa-star"></a>
-        </div>
+
+  </div>
+  <div class="col text-center star-skills">
+    <div class="row" *ngFor="let skill of skillList2">
+      <div class="col-sm-2">{{ skill.name }}</div>
+      <div class="col">
+        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 1)}"></a>
+        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 2)}"></a>
+        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 3)}"></a>
+        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 4)}"></a>
+        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 5)}"></a>
       </div>
     </div>
   </div>

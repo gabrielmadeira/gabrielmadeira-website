@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-skills',
@@ -6,6 +7,41 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent implements OnInit {
+
+  skillList1 = [
+    {
+      name:"HTML", 
+      rating: 3
+    },
+    {
+      name:"CSS", 
+      rating: 3
+    },
+    {
+      name:"Javscript", 
+      rating: 3
+    },
+    {
+      name:"PHP", 
+      rating: 2
+    },
+  ];
+
+  skillList2 = [
+    {
+      name:"Python", 
+      rating: 3
+    },
+    {
+      name:"C++", 
+      rating: 2
+    },
+    {
+      name:"PostgreSQL", 
+      rating: 3
+    }
+  ];
+
   constructor() {}
 
   ngOnInit(): void {
@@ -52,7 +88,7 @@ export class SkillsComponent implements OnInit {
       var ctx = $(this).find('canvas')[0].getContext('2d');
       ctx.canvas.width = width;
       ctx.canvas.height = height;
-      ctx.font = '15px Monospace';
+      ctx.font = '20px Monospace';
       ctx.textAlign = 'center';
 
       /*** LABEL ***/
@@ -60,7 +96,7 @@ export class SkillsComponent implements OnInit {
       ctx.fillStyle = color;
       ctx.fillText(skills[pentagonIndex].header, width / 2, 15);
 
-      ctx.font = '13px Monospace';
+      ctx.font = '16px Monospace';
 
       /*** PENTAGON BACKGROUND ***/
       for (var i = 0; i < sides; i++) {
