@@ -88,15 +88,15 @@ export class SkillsComponent implements OnInit {
       var ctx = $(this).find('canvas')[0].getContext('2d');
       ctx.canvas.width = width;
       ctx.canvas.height = height;
-      ctx.font = '20px Monospace';
+      ctx.font = '20px Helvetica';
       ctx.textAlign = 'center';
 
       /*** LABEL ***/
       var color = 'hsl(' + hue[pentagonIndex] + ', 100%, 50%)';
       ctx.fillStyle = color;
-      ctx.fillText(skills[pentagonIndex].header, width / 2, 15);
+      // ctx.fillText(skills[pentagonIndex].header, width / 2, 15);
 
-      ctx.font = '16px Monospace';
+      ctx.font = '16px Helvetica';
 
       /*** PENTAGON BACKGROUND ***/
       for (var i = 0; i < sides; i++) {
