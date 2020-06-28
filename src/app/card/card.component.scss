@@ -1,6 +1,6 @@
 .card {
     display: block;
-    width: 60%;
+    width: 900px;
     height: auto;
     background-color: #031a2c15;
     margin-left: auto;
@@ -10,13 +10,29 @@
     
     padding: 10px;
 
-    border-radius: 25px;
-    border: 2px solid #011627;
+    // border-radius: 25px;
+    // border: 2px solid #011627;
     // padding: 20px;
 }
 
 .card-img {
     width: 300px;
-    border-radius: 25px;
-    border: 2px solid #011627;
+    // border-radius: 25px;
+    // border: 2px solid #011627;
 }
+
+@media (max-width: 1050px) {
+    .card {
+        width: 100%;
+    }
+    .card-img {
+        width: 100%;
+    }
+}
+
+// @media (max-width: 720px) {
+//     .col { 
+//         display: inline-table;
+//         float: none;
+//     }
+// }
