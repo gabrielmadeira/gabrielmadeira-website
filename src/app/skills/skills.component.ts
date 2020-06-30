@@ -88,7 +88,7 @@ export class SkillsComponent implements OnInit {
       var ctx = $(this).find('canvas')[0].getContext('2d');
       ctx.canvas.width = width;
       ctx.canvas.height = height;
-      ctx.font = '20px Helvetica';
+      ctx.font = '18px Helvetica';
       ctx.textAlign = 'center';
 
       /*** LABEL ***/
