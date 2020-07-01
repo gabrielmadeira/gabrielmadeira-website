@@ -1,38 +1,42 @@
 .card {
-    display: block;
-    width: 900px;
-    height: auto;
     background-color: #031a2c15;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-    padding: 10px;
-
     // border-radius: 25px;
     // border: 2px solid #011627;
-    // padding: 20px;
+    // padding: 10vw;
+}
+
+.text-responsive-institution {
+    font-size: calc(40% + 1vw + 1vh);
+}
+
+.text-responsive-title {
+    font-size: calc(30% + 1vw + 1vh);
+}
+
+.text-responsive-general {
+    font-size: calc(15% + 1vw + 1vh);
 }
 
 .card-img {
-    width: 300px;
+    // width: 300px;
     // border-radius: 25px;
+    margin-bottom: 5vw;
     // border: 2px solid #011627;
 }
 
-@media (max-width: 1050px) {
-    .card {
-        width: 100%;
-    }
-    .card-img {
-        width: 100%;
-    }
-}
+// @media (max-width: 1050px) {
+//     .card {
+//         width: 100%;
+//         margin: 0 !important;
+//     }
+//     .card-img {
+//         width: 100%;
+//     }
+// }
 
-@media (max-width: 720px) {
-    .col { 
-        display: inline-table;
-        float: none;
+@media (min-width: 720px) {
+    .row {
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 }

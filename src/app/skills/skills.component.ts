@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { NgClass } from '@angular/common';
 
 @Component({
@@ -45,7 +45,15 @@ export class SkillsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    this.drawInterestsPentagon();
+  }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.drawInterestsPentagon();
+  }
+
+  drawInterestsPentagon () {
     var skills:any = [
       {
         header: 'INTERESTS',
@@ -73,8 +81,8 @@ export class SkillsComponent implements OnInit {
     var hueOffset = 25;
     
     $(skills).each(function (s) {
-      console.log(s);
-      $('.content').append(
+      // console.log(s);
+      $('.content-interests').html(
         '<div class="pentagon" id="interests"><div class="header"></div><canvas class="pentCanvas"/></div>'
       );
       hue[s] = (hueOffset + (255 * s) / skills.length) % 255;
@@ -82,7 +90,8 @@ export class SkillsComponent implements OnInit {
     });
 
     $('.pentagon').each(function (index) {
-      width = $(this).width();
+      width = $(this).width() * 0.85;
+      // console.log($(this).width());
       // height = $(this).height();
       height = width;
       var ctx = $(this).find('canvas')[0].getContext('2d');
@@ -112,7 +121,7 @@ export class SkillsComponent implements OnInit {
         xy = getXY(i + 1, 0.3);
         ctx.lineTo(xy.x, xy.y);
         xy = getXY(i, 0.37);
-        console.log();
+        // console.log();
         ctx.fillText(
           skills[pentagonIndex].captions[valueIndex],
           xy.x,

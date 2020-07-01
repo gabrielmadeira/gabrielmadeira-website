@@ -1,17 +1,14 @@
-<div class="col">
-  <div class="card">
-    <div class="row">
-      <div class="col text-center">
-        <img src="{{ imgUrl }}" class="card-img">
-      
-        <h4>{{ institution }}</h4>
-        <h5>{{ title }}</h5>
-        <h6>{{ period }}</h6>
-        <h6>{{ location }}</h6>
-        <span>
-          {{ description }}
-        </span>
-      </div>
-    </div>
+<div class="row">
+  <div class="col-md-4 col-6 offset-3 offset-md-0">
+    <img src="{{ imgUrl }}" class="rounded img-fluid card-img" />
+  </div>
+  <div class="col-md-8 text-justify text-md-left">
+    <h5 class="text-responsive-institution">{{ institution }}</h5>
+    <h5 class="text-responsive-title">{{ title }}</h5>
+    <h5 class="text-responsive-general">{{ period }}</h5>
+    <h5 class="text-responsive-general">{{ location }}</h5>
+    <p class="text-responsive-general text-justify">
+      {{ description }}
+    </p>
   </div>
 </div>
