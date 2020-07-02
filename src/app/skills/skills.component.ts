@@ -56,8 +56,8 @@ export class SkillsComponent implements OnInit {
   drawInterestsPentagon () {
     var skills:any = [
       {
-        header: 'INTERESTS',
-        captions: ['Cooking', 'Web', 'Mobile', 'Design', 'AI'],
+        header: 'Computer Science Fields',
+        captions: ['Data\nScience', 'Artificial\nIntelligence', 'Application\nDevelopment', 'Computer\nGraphics', 'Cyber\nSecurity'],
         values: [0.7, 0.9, 0.7, 0.8, 0.7],
       }
     ];
@@ -78,7 +78,7 @@ export class SkillsComponent implements OnInit {
     }
 
     var hue = [];
-    var hueOffset = 25;
+    var hueOffset = 200;
     
     $(skills).each(function (s) {
       // console.log(s);
@@ -97,15 +97,15 @@ export class SkillsComponent implements OnInit {
       var ctx = $(this).find('canvas')[0].getContext('2d');
       ctx.canvas.width = width;
       ctx.canvas.height = height;
-      ctx.font = '18px Helvetica';
+      ctx.font = 'bold 15px Helvetica';
       ctx.textAlign = 'center';
 
       /*** LABEL ***/
-      var color = 'hsl(' + hue[pentagonIndex] + ', 100%, 50%)';
+      var color = 'hsl(' + hue[pentagonIndex] + ', 11%, 15%)';
       ctx.fillStyle = color;
-      // ctx.fillText(skills[pentagonIndex].header, width / 2, 15);
+      ctx.fillText(skills[pentagonIndex].header, width / 2, 15);
 
-      ctx.font = '16px Helvetica';
+      ctx.font = 'bold 12px Helvetica';
 
       /*** PENTAGON BACKGROUND ***/
       for (var i = 0; i < sides; i++) {
@@ -113,7 +113,7 @@ export class SkillsComponent implements OnInit {
         ctx.beginPath();
         var xy = getXY(i, 0.3);
         var colorJitter = 25 + theta * i * 2;
-        color = 'hsl(' + hue[pentagonIndex] + ',100%,' + colorJitter + '%)';
+        color = 'hsl(' + hue[pentagonIndex] + ',11%,' + colorJitter + '%)';
         ctx.fillStyle = color;
         ctx.strokeStyle = color;
         ctx.moveTo(0.5 * width, 0.5 * height); //center
@@ -122,11 +122,19 @@ export class SkillsComponent implements OnInit {
         ctx.lineTo(xy.x, xy.y);
         xy = getXY(i, 0.37);
         // console.log();
-        ctx.fillText(
-          skills[pentagonIndex].captions[valueIndex],
-          xy.x,
-          xy.y + 5
-        );
+        
+        var lines = skills[pentagonIndex].captions[valueIndex].split('\n');
+        var lineheight = 12;
+        var moveValuesX = [0,+2,-10,+10,+5]
+        var moveValuesY = [5,8,-10,-10, 0]
+        for (var j = 0; j<lines.length; j++) {
+          ctx.fillText(
+            lines[j],
+            xy.x + moveValuesX[valueIndex],
+            xy.y + 5 + moveValuesY[valueIndex] + (j*lineheight)
+          );
+        }
+        
         valueIndex++;
         ctx.closePath();
         ctx.fill();
