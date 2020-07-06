@@ -25,6 +25,14 @@ export class SkillsComponent implements OnInit {
       name:"PHP", 
       rating: 2
     },
+    {
+      name:"Angular", 
+      rating: 2
+    },
+    {
+      name:"Shell", 
+      rating: 2
+    },
   ];
 
   skillList2 = [
@@ -37,7 +45,15 @@ export class SkillsComponent implements OnInit {
       rating: 2
     },
     {
+      name:"C", 
+      rating: 2
+    },
+    {
       name:"PostgreSQL", 
+      rating: 3
+    },
+    {
+      name:"MySQL", 
       rating: 3
     }
   ];
