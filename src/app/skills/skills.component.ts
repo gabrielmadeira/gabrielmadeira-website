@@ -72,7 +72,8 @@ export class SkillsComponent implements OnInit {
   drawInterestsPentagon () {
     var skills:any = [
       {
-        header: 'Computer Science Fields',
+        header: 'My Fields of Interest',
+        header2: 'in Computer Science',
         captions: ['Data\nScience', 'Artificial\nIntelligence', 'Application\nDevelopment', 'Computer\nGraphics', 'Cyber\nSecurity'],
         values: [0.7, 0.9, 0.7, 0.8, 0.7],
       }
@@ -113,13 +114,14 @@ export class SkillsComponent implements OnInit {
       var ctx = $(this).find('canvas')[0].getContext('2d');
       ctx.canvas.width = width;
       ctx.canvas.height = height;
-      ctx.font = 'bold 15px Helvetica';
+      ctx.font = 'bold 14px Helvetica';
       ctx.textAlign = 'center';
 
       /*** LABEL ***/
       var color = 'hsl(' + hue[pentagonIndex] + ', 11%, 15%)';
       ctx.fillStyle = color;
       ctx.fillText(skills[pentagonIndex].header, width / 2, 15);
+      ctx.fillText(skills[pentagonIndex].header2, width / 2, 32);
 
       ctx.font = 'bold 12px Helvetica';
 

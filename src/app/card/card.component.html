@@ -1,14 +1,14 @@
 <div class="row">
-  <div class="col-md-4 col-6 offset-3 offset-md-0">
-    <img src="{{ imgUrl }}" class="rounded img-fluid card-img" />
+  <div class="col-md-4 col-6 offset-3 offset-md-0" style="text-align: right;">
+    <a href="{{ imgLink }}" target="_blank"> <img src="{{ imgUrl }}" class="rounded img-fluid card-img" /> </a>
   </div>
   <div class="col-md-8 text-justify text-md-left">
     <h5 class="text-responsive-institution">{{ institution }}</h5>
     <h5 class="text-responsive-title">{{ title }}</h5>
     <h5 class="text-responsive-general">{{ period }}</h5>
     <h5 class="text-responsive-general">{{ location }}</h5>
-    <p class="text-responsive-general text-justify">
-      {{ description }}
+    <p class="text-responsive-general text-justify"  [innerHTML]="description">
     </p>
+    <!-- style="white-space: pre-wrap;" -->
   </div>
 </div>

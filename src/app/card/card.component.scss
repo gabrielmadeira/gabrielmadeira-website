@@ -14,8 +14,16 @@
 }
 
 .text-responsive-general {
-    font-size: calc(15% + 1vw + 1vh);
+    font-size: calc(8% + 1vw + 1vh);
+    
 }
+
+@media (min-width: 992px) {
+    .text-responsive-general {
+        font-size: 18px;
+    }
+}
+
 
 .card-img {
     // width: 300px;
@@ -39,4 +47,12 @@
         margin-left: 5vw;
         margin-right: 5vw;
     }
+    .img-fluid{
+        width: 90%;
+    }
+    .card-img {
+        width: 250px;
+    }
 }
+
+

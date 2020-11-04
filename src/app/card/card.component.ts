@@ -11,6 +11,7 @@ export class CardComponent implements OnInit {
   @Input() institution: string;
   @Input() description: string;
   @Input() imgUrl: string;
+  @Input() imgLink: string;
   @Input() period: string;
   @Input() location: string;
 

@@ -1,0 +1,130 @@
+<app-navbar></app-navbar>
+<div class="view jarallax main-container" style="height: 100vh;">
+  <img class="jarallax-img" src="../assets/images/main-background.jpg" />
+  <div>
+    <h2>Interactive Resume</h2>
+    <h1 data-text="Gabriel Madeira">Gabriel Madeira</h1>
+  </div>
+</div>
+
+<div class="container" id="about">
+  <div class="row">
+  <div class="col-sm-12 text-center section-title" >ABOUT</div>
+  <div class="col-md-3 col-sm-4 offset-md-2 offset-3 col-6 offset-sm-0" >
+    <img class="img-fluid img-thumbnail" src="../assets/images/profile.jpg">
+  </div>
+  <div class="col-10 offset-1 offset-sm-0 col-md-5 col-sm-8 text-justify about-span">
+    <span>Hey, I'm Gabriel,</span>
+    <span style="color: #2d80c4;">Computer Science Student 💻</span>
+    <span>@ Federal University of Rio Grande do Sul 🏛</span>
+    <span>located in Porto Alegre - RS 🇧🇷</span>
+    <a href="../assets/files/resume_gabrielmadeira.pdf" target="_blank" class="fa fa-file-pdf-o">
+      <span style="font-size: 14px; display: inline;"> Resume</span></a
+    >
+    <a
+      href="https://www.linkedin.com/in/gabriel-madeira"
+      target="_blank"
+      class="fa fa-linkedin"
+    ></a>
+    <a
+      href="mailto:gabr.madeira@gmail.com"
+      target="_blank"
+      class="fa fa-envelope"
+    ></a>
+    <a
+      href="https://github.com/gabrielmadeira"
+      target="_blank"
+      class="fa fa-github"
+    ></a>
+    <a
+      href="https://www.instagram.com/gabr.madeira"
+      target="_blank"
+      class="fa fa-instagram"
+    ></a>
+    
+    
+  </div>
+</div>
+</div>
+
+<div class="container-fluid container-var" id="experiences">
+  <div class="col text-center section-title">EXPERIENCES</div>
+  <div class="col text-center subsection-title">Education</div>
+  <app-card
+    imgUrl="assets/images/ufrgs.png"
+    imgLink="http://www.ufrgs.br/english/home"
+    title="Computer Science Undergraduate"
+    institution="Federal University of Rio Grande do Sul"
+    period="March 2020 - Now (Graduating in June 2023)"
+    location="Porto Alegre - RS - Brazil"
+    description=""
+  ></app-card>
+  <app-card
+    imgUrl="assets/images/furg.png"
+    imgLink="https://www.furg.br/en/"
+    title="Computer Engineering Undergraduate"
+    institution="Federal University of Rio Grande (FURG)"
+    period="March 2019 - Dezember 2019"
+    location="Rio Grande - RS - Brazil"
+    description="(university and course transfer after one year)<br>
+    <a href='https://www.scholaro.com/gpa-calculator/' target='_blank' title='Converted to US grade using Scholaro GPA calculator'>GPA</a>: 3.95/4.00"
+  ></app-card>
+  <app-card
+    imgUrl="assets/images/furg.png"
+    imgLink="https://www.furg.br/en/"
+    title="Information Systems Undergraduate"
+    institution="Federal University of Rio Grande (FURG)"
+    period="March 2018 - Dezember 2018"
+    location="Rio Grande - RS - Brazil"
+    description="(course transfer after one year)<br>
+    <a href='https://www.scholaro.com/gpa-calculator/' target='_blank' title='Converted to US grade using Scholaro GPA calculator'>GPA</a>: 3.92/4.00"
+  ></app-card>
+  <app-card
+    imgUrl="assets/images/qwertye.png"
+    imgLink="https://escola.qwerty.com.br/"
+    title="Technical course - Computing Technician"
+    institution="Qwerty Escola"
+    period="March 2015 - Dezember 2016"
+    location="Dom Pedrito - RS - Brazil"
+    description="<a href='https://www.scholaro.com/gpa-calculator/' target='_blank' title='Converted to US grade using Scholaro GPA calculator'>GPA</a>: 3.73/4.00"
+  ></app-card>
+  <div class="col text-center subsection-title">Work Experience</div>
+  <app-card
+    imgUrl="assets/images/ginfo.png"
+    imgLink="https://www.instagram.com/ginfo_cflex/"
+    title="Undergraduate Researcher"
+    institution="Information Management Research Group - FURG"
+    period="April 2018 - July 2020"
+    location="Rio Grande - RS - Brazil"
+    description="
+    Advised by Eduardo Borges was performed: <br>
+    • Cleaning anomalies in a database of more than 500 thousand rows with Postgresql. <br>
+    • Development ofrecursive algorithm forthe visualization of academic trees. <br>
+    • Developed <a href='http://thegoldtree.c3.furg.br' target='_blank'><b>The Gold Tree</b></a>, a web tool for academic genealogy analysis using HTML, CSS, Javascript and Postgresql. <br>
+    • Study of several machine learning technical algorithms. <br>
+    • The Nearest Centroid algorithm and TF-IDF method was used to model a advisor recommendation system. <br>
+    <b>Publications:</b> <br>
+    [1] G. Madeira, E. Borges, M. Barañano, P. Nascimento, L. Giancarlo, M. Maia, H. Salles, and G. Dimuro. The gold tree: An information system for analyzing academic genealogy. In International Conference on Enterprise Information Systems 2019, pages 114–120, 01 2019. <br>
+    [2] G. Madeira, E. N. Borges, G. Lucca, H. Santos, and G. Dimuro. A tool for analyzing academic genealogy. In Enterprise Information Systems. Lecture Notesin Business Information Processing, vol 378, pages 443–456. Springer, 2019. 
+    "
+  ></app-card>
+  <app-card
+    imgUrl="assets/images/qwertyp.png"
+    imgLink="https://www.qwerty.com.br/"
+    title="Computer Technician"
+    institution="Qwerty News Portal"
+    period="April 2016 - July 2017"
+    location="Dom Pedrito - RS - Brazil"
+    description=" 
+    • Developed a Arrival and departure control system using HTML, CSS, Javascript, PHP, MySql. <br>
+    • Developed a Transparency portal using HTML, CSS, Javascript, PHP, MySql. <br>
+    • Video editing and art creation for the news portal."
+  ></app-card>
+</div>
+
+<div class="container-fluid" id="skills">
+  <div class="col text-center section-title">SKILLS</div>
+  <div class="col text-center">
+    <app-skills></app-skills>
+  </div>
+</div>

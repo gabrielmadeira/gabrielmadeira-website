@@ -1,5 +1,4 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { jarallax } from 'jarallax';
 
 
 @Component({
@@ -12,11 +11,5 @@ import { jarallax } from 'jarallax';
 export class AppComponent implements OnInit {
   title = 'gabrielmadeira';
   ngOnInit() {
-
-    jarallax(document.querySelectorAll('.jarallax'));
-    jarallax(document.querySelectorAll('.jarallax-keep-img'), {
-        keepImg: true,
-    });
-
   }
 }

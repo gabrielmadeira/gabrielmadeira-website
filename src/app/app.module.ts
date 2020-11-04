@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CardComponent } from './card/card.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
+import { ServicesComponent } from './services/services.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
     NavbarComponent,
     CardComponent,
     SkillsComponent,
+    ServicesComponent,
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,
