@@ -1,30 +1,18 @@
 <div class="row">
-  <div class="col-md-4">
+  <!-- <div class="col-md-4">
     <div class="content-interests"></div>
-  </div>
-  <div class="col-md-4 col-10 offset-1 offset-md-0 text-center star-skills">
-    <div class="row" *ngFor="let skill of skillList1">
+  </div> -->
+  <div class="col-md-6 col-10 offset-1 offset-md-0 text-center star-skills">
+    <h2>Languages</h2>
+    <div class="row" *ngFor="let skill of langList">
       <div class="col">{{ skill.name }}</div>
-      <div class="col">
-        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 1)}"></a>
-        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 2)}"></a>
-        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 3)}"></a>
-        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 4)}"></a>
-        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 5)}"></a>
-      </div>
+      <div class="col">{{ skill.time }}</div>
     </div>
-
   </div>
-  <div class="col-md-4 col-10 offset-1 offset-md-0 text-center star-skills">
-    <div class="row" *ngFor="let skill of skillList2">
+  <div class="col-md-6 col-10 offset-1 offset-md-0 text-center star-skills">
+    <h2>Technologies</h2>
+    <div class="row" *ngFor="let skill of techList">
       <div class="col">{{ skill.name }}</div>
-      <div class="col">
-        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 1)}"></a>
-        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 2)}"></a>
-        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 3)}"></a>
-        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 4)}"></a>
-        <a class="fa fa-star" [ngClass]="{'checked' : (skill.rating >= 5)}"></a>
-      </div>
     </div>
   </div>
 </div>
