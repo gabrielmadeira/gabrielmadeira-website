@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<div class="view jarallax main-container" style="height: 100vh;">
+<div class="view jarallax main-container" style="height: 100vh">
   <img class="jarallax-img" src="../assets/images/main-background.jpg" />
   <div>
     <h2>Interactive Resume</h2>
@@ -9,94 +9,79 @@
 
 <div class="container" id="about">
   <div class="row">
-  <div class="col-sm-12 text-center section-title" >ABOUT</div>
-  <div class="col-md-3 col-sm-4 offset-md-2 offset-3 col-6 offset-sm-0" >
-    <img class="img-fluid img-thumbnail" src="../assets/images/profile.jpg">
-  </div>
-  <div class="col-10 offset-1 offset-sm-0 col-md-5 col-sm-8 text-justify about-span">
-    <span>Hey, I'm Gabriel,</span>
-    <span style="color: #2d80c4;">Computer Science Student 💻</span>
-    <span>@ Federal University of Rio Grande do Sul 🏛</span>
-    <span>located in Porto Alegre - RS 🇧🇷</span>
-    <a href="../assets/files/resume_gabrielmadeira.pdf" target="_blank" class="fa fa-file-pdf-o">
-      <span style="font-size: 14px; display: inline;"> Resume</span></a
+    <div class="col-sm-12 text-center section-title">ABOUT</div>
+    <div class="col-md-3 col-sm-4 offset-md-2 offset-3 col-6 offset-sm-0">
+      <img class="img-fluid img-thumbnail" src="../assets/images/profile.jpg" />
+    </div>
+    <div
+      class="col-10 offset-1 offset-sm-0 col-md-5 col-sm-8 text-justify about-span"
     >
-    <a
-      href="https://www.linkedin.com/in/gabriel-madeira"
-      target="_blank"
-      class="fa fa-linkedin"
-    ></a>
-    <a
-      href="mailto:gabr.madeira@gmail.com"
-      target="_blank"
-      class="fa fa-envelope"
-    ></a>
-    <a
-      href="https://github.com/gabrielmadeira"
-      target="_blank"
-      class="fa fa-github"
-    ></a>
-    <a
-      href="https://www.instagram.com/gabr.madeira"
-      target="_blank"
-      class="fa fa-instagram"
-    ></a>
-    
-    
+      <span>Hey, I'm Gabriel,</span>
+      <span style="color: #2d80c4">Computer Science Student 💻</span>
+      <span>@ Federal University of Rio Grande do Sul 🏛</span>
+      <span>located in Porto Alegre - RS 🇧🇷</span>
+      <a
+        href="../assets/files/resume_gabrielmadeira.pdf"
+        target="_blank"
+        class="fa fa-file-pdf-o"
+      >
+        <span style="font-size: 14px; display: inline"> Resume</span></a
+      >
+      <a
+        href="https://www.linkedin.com/in/gabriel-madeira"
+        target="_blank"
+        class="fa fa-linkedin"
+      ></a>
+      <a
+        href="mailto:gabr.madeira@gmail.com"
+        target="_blank"
+        class="fa fa-envelope"
+      ></a>
+      <a
+        href="https://github.com/gabrielmadeira"
+        target="_blank"
+        class="fa fa-github"
+      ></a>
+      <a
+        href="https://www.instagram.com/gabr.madeira"
+        target="_blank"
+        class="fa fa-instagram"
+      ></a>
+    </div>
   </div>
-</div>
 </div>
 
 <div class="container-fluid container-var" id="experiences">
   <div class="col text-center section-title">EXPERIENCES</div>
-  <div class="col text-center subsection-title">Education</div>
-  <app-card
-    imgUrl="assets/images/ufrgs.png"
-    imgLink="http://www.ufrgs.br/english/home"
-    title="Computer Science Undergraduate"
-    institution="Federal University of Rio Grande do Sul"
-    period="March 2020 - Now (Graduating in June 2023)"
-    location="Porto Alegre - RS - Brazil"
-    description=""
-  ></app-card>
-  <app-card
-    imgUrl="assets/images/furg.png"
-    imgLink="https://www.furg.br/en/"
-    title="Computer Engineering Undergraduate"
-    institution="Federal University of Rio Grande (FURG)"
-    period="March 2019 - Dezember 2019"
-    location="Rio Grande - RS - Brazil"
-    description="(university and course transfer after one year)<br>
-    <a href='https://www.scholaro.com/gpa-calculator/' target='_blank' title='Converted to US grade using Scholaro GPA calculator'>GPA</a>: 3.95/4.00"
-  ></app-card>
-  <app-card
-    imgUrl="assets/images/furg.png"
-    imgLink="https://www.furg.br/en/"
-    title="Information Systems Undergraduate"
-    institution="Federal University of Rio Grande (FURG)"
-    period="March 2018 - Dezember 2018"
-    location="Rio Grande - RS - Brazil"
-    description="(course transfer after one year)<br>
-    <a href='https://www.scholaro.com/gpa-calculator/' target='_blank' title='Converted to US grade using Scholaro GPA calculator'>GPA</a>: 3.92/4.00"
-  ></app-card>
-  <app-card
-    imgUrl="assets/images/qwertye.png"
-    imgLink="https://escola.qwerty.com.br/"
-    title="Technical course - Computing Technician"
-    institution="Qwerty Escola"
-    period="March 2015 - Dezember 2016"
-    location="Dom Pedrito - RS - Brazil"
-    description="<a href='https://www.scholaro.com/gpa-calculator/' target='_blank' title='Converted to US grade using Scholaro GPA calculator'>GPA</a>: 3.73/4.00"
-  ></app-card>
   <div class="col text-center subsection-title">Work Experience</div>
   <app-card
     imgUrl="assets/images/nelogica.png"
     imgLink="https://www.nelogica.com.br/"
-    title="Software Development Intern"
+    title="Software Development Intern (Back-end)"
     institution="Nelogica"
-    period="Fev 2021 - Present"
+    period="Oct 2021 - Mar 2022"
     location="Porto Alegre - RS - Brazil"
-    description=""
+    description="
+    • Implementation of a database event proxy REST API service, in the OpenAPI Specification, almost zeroing the rate of accumulated DB commands in the message service for clients. <br>
+    • Implementation of a service dynamic installer, making the process of creating specific new instances easier. <br>
+    • Implementation of replaceable tags feature in the body of a message in the notification service for clients. <br>
+    • Technologies: Delphi.
+    "
+  ></app-card>
+  <app-card
+    imgUrl="assets/images/nelogica.png"
+    imgLink="https://www.nelogica.com.br/"
+    title="Software Development Intern (Front-end)"
+    institution="Nelogica"
+    period="Fev 2021 - Sep 2021"
+    location="Porto Alegre - RS - Brazil"
+    description="
+    • Helping to develop a web platform to operate in the financial market. <br>
+    • Creation of a virtual wallet component, which simulates a real exchange wallet. <br>
+    • Login screen loading optimization, using asynchronous imports in JavaScript, ~47% reduction in file size required for login screen. <br>
+    • Asset conversion method from several different quote sources using JavaScript promises. <br>
+    • Technologies: Vue.js, JavaScript, CSS, HTML.
+    "
   ></app-card>
   <app-card
     imgUrl="assets/images/ginfo.png"
@@ -108,13 +93,14 @@
     description="
     Advised by Eduardo Borges was performed: <br>
     • Cleaning anomalies in a database of more than 500 thousand rows with Postgresql. <br>
-    • Development ofrecursive algorithm forthe visualization of academic trees. <br>
+    • Development of recursive algorithm forthe visualization of academic trees. <br>
     • Developed <a href='http://thegoldtree.c3.furg.br' target='_blank'><b>The Gold Tree</b></a>, a web tool for academic genealogy analysis using HTML, CSS, Javascript and Postgresql. <br>
     • Study of several machine learning technical algorithms. <br>
     • The Nearest Centroid algorithm and TF-IDF method was used to model a advisor recommendation system. <br>
     <b>Publications:</b> <br>
-    [1] G. Madeira, E. Borges, M. Barañano, P. Nascimento, L. Giancarlo, M. Maia, H. Salles, and G. Dimuro. The gold tree: An information system for analyzing academic genealogy. In International Conference on Enterprise Information Systems 2019, pages 114–120, 01 2019. <br>
-    [2] G. Madeira, E. N. Borges, G. Lucca, H. Santos, and G. Dimuro. A tool for analyzing academic genealogy. In Enterprise Information Systems. Lecture Notesin Business Information Processing, vol 378, pages 443–456. Springer, 2019. 
+    [1] Madeira, G., Borges, E.N., Baranano, M., Nascimento, P.K., Lucca, G., de Fatima Maia, M., Santos, H.S. and Dimuro, G.P., 2019. The Gold Tree: An Information System for Analyzing Academic Genealogy. In Proceedings of the ICEIS 2019 (pp. 114-120). <br>
+    [2] Madeira, G., Borges, E.N., Lucca, G., Santos, H. and Dimuro, G., 2019. A tool for analyzing academic genealogy. In Lecture Notes in Business Information Processing, vol 378, (pp. 443–456). <br>
+    [3] Madeira, G., Borges, E.N., Lucca, G., de Carvalho Segundo, W., Wieczynski, J.C., Santos, H.S. and Dimuro, G.P., 2021. Using Academic Genealogy for Recommending Supervisors. In Proceedings of the ICEIS 2021 (pp. 885-892).
     "
   ></app-card>
   <app-card
@@ -129,11 +115,50 @@
     • Developed a Transparency portal using HTML, CSS, Javascript, PHP, MySql. <br>
     • Video editing and art creation for the news portal."
   ></app-card>
+  <div class="col text-center subsection-title">Education</div>
+  <app-card
+    imgUrl="assets/images/ufrgs.png"
+    imgLink="http://www.ufrgs.br/english/home"
+    title="Computer Science Undergraduate"
+    institution="Federal University of Rio Grande do Sul"
+    period="March 2020 - Now (Graduating in Dezember 2023)"
+    location="Porto Alegre - RS - Brazil"
+    description="GPA: 9.56/10.00"
+  ></app-card>
+  <app-card
+    imgUrl="assets/images/furg.png"
+    imgLink="https://www.furg.br/en/"
+    title="Computer Engineering Undergraduate"
+    institution="Federal University of Rio Grande (FURG)"
+    period="March 2019 - Dezember 2019"
+    location="Rio Grande - RS - Brazil"
+    description="GPA: 9.40/10.00<br>
+    (university and course transfer after one year)"
+  ></app-card>
+  <app-card
+    imgUrl="assets/images/furg.png"
+    imgLink="https://www.furg.br/en/"
+    title="Information Systems Undergraduate"
+    institution="Federal University of Rio Grande (FURG)"
+    period="March 2018 - Dezember 2018"
+    location="Rio Grande - RS - Brazil"
+    description="GPA: 9.62/10.00<br>
+    (course transfer after one year)"
+  ></app-card>
+  <app-card
+    imgUrl="assets/images/qwertye.png"
+    imgLink="https://escola.qwerty.com.br/"
+    title="Technical course - Computing Technician"
+    institution="Qwerty Escola"
+    period="March 2015 - Dezember 2016"
+    location="Dom Pedrito - RS - Brazil"
+    description="GPA: 9.32/10.00"
+  ></app-card>
 </div>
 
-<!-- <div class="container-fluid" id="skills">
+<div class="container-fluid" id="skills">
   <div class="col text-center section-title">SKILLS</div>
   <div class="col text-center">
     <app-skills></app-skills>
   </div>
-</div> -->
+</div>

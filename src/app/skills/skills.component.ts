@@ -8,53 +8,57 @@ import { NgClass } from '@angular/common';
 })
 export class SkillsComponent implements OnInit {
 
-  skillList1 = [
+  langList = [
     {
-      name:"HTML", 
-      rating: 3
+      name:"Python", 
+      time: "2 years"
     },
     {
-      name:"CSS", 
-      rating: 3
+      name:"JavaScript", 
+      time: "2 years"
     },
     {
-      name:"Javscript", 
-      rating: 3
+      name:"SQL", 
+      time: "2 years"
+    },
+    {
+      name:"C/C++", 
+      time: "1 year"
     },
     {
       name:"PHP", 
-      rating: 2
+      time: "1 year"
+    },
+    {
+      name:"Delphi", 
+      time: "4 months"
+    }
+  ];
+
+  techList = [
+    {
+      name:"HTML", 
+    },
+    {
+      name:"CSS", 
+    },
+    {
+      name:"Vue.js", 
+    },
+    {
+      name:"Git", 
+    },
+    {
+      name:"Unix/Bash", 
+    },
+    {
+      name:"Scikit-Learn", 
+    },
+    {
+      name:"Pandas", 
     },
     {
       name:"Angular", 
-      rating: 2
-    },
-    {
-      name:"Shell", 
-      rating: 2
-    },
-  ];
-
-  skillList2 = [
-    {
-      name:"Python", 
-      rating: 3
-    },
-    {
-      name:"C++", 
-      rating: 2
-    },
-    {
-      name:"C", 
-      rating: 2
-    },
-    {
-      name:"PostgreSQL", 
-      rating: 3
-    },
-    {
-      name:"MySQL", 
-      rating: 3
     }
   ];
 
