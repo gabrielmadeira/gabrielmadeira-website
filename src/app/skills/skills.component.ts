@@ -55,10 +55,16 @@ export class SkillsComponent implements OnInit {
       name:"Scikit-Learn", 
     },
     {
+      name:"Tensorflow", 
+    },
+    {
       name:"Pandas", 
     },
     {
       name:"Angular", 
+    },
+    {
+      name:"Qt", 
     }
   ];
 
