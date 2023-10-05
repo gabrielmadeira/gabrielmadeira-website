@@ -1,2 +1,11 @@
 identifier: k4k1m5ied93ekbq3
 allowErrorCollect: true
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: gabrielmadeira
+homeFolder: /home/gabrielm/dev/gabrielmadeira-website
+distFolder: dist/gabrielmadeira
+outDir: /home/gabrielm/dev/gabrielmadeira-website/dist/static
+handle404: ''

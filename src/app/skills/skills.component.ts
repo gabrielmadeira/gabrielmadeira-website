@@ -30,6 +30,10 @@ export class SkillsComponent implements OnInit {
       time: "1 year"
     },
     {
+      name:"Java", 
+      time: "4 months"
+    },
+    {
       name:"Delphi", 
       time: "4 months"
     }

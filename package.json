@@ -24,6 +24,7 @@
     "@scullyio/init": "0.0.28",
     "@scullyio/ng-lib": "latest",
     "@scullyio/scully": "latest",
+    "@scullyio/scully-plugin-puppeteer": "^2.1.41",
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
     "jarallax": "^1.12.1",

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CardComponent } from './card/card.component';
 import { SkillsComponent } from './skills/skills.component';
-import { ScullyLibModule } from '@scullyio/ng-lib';
+// import { ScullyLibModule } from '@scullyio/ng-lib';
 import { ServicesComponent } from './services/services.component';
 import { ResumeComponent } from './resume/resume.component';
 
@@ -22,7 +22,7 @@ import { ResumeComponent } from './resume/resume.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ScullyLibModule,
+    // ScullyLibModule,
 
   ],
   providers: [],
