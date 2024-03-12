@@ -8,17 +8,17 @@ import { NgClass } from '@angular/common';
 })
 export class SkillsComponent implements OnInit {
 
-  langList = [
-    {
-      name:"Python", 
-      time: "2 years"
-    },
+  programLangList = [
     {
       name:"JavaScript", 
       time: "2 years"
     },
     {
       name:"SQL", 
+      time: "2 years"
+    },
+    {
+      name:"Python", 
       time: "2 years"
     },
     {
@@ -31,7 +31,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       name:"Java", 
-      time: "4 months"
+      time: "6 months"
     },
     {
       name:"Delphi", 
@@ -41,34 +41,46 @@ export class SkillsComponent implements OnInit {
 
   techList = [
     {
-      name:"HTML", 
-    },
-    {
-      name:"CSS", 
-    },
-    {
       name:"Vue.js", 
+    },
+    {
+      name:"Spring Boot", 
     },
     {
       name:"Git", 
     },
     {
-      name:"Unix/Bash", 
+      name:"Unix, Bash", 
     },
     {
-      name:"Scikit-Learn", 
+      name:"Docker", 
     },
     {
-      name:"Tensorflow", 
+      name:"Scikit-Learn, Tensorflow", 
     },
     {
-      name:"Pandas", 
+      name:"HTML, CSS", 
     },
     {
       name:"Angular", 
     },
     {
       name:"Qt", 
+    }
+  ];
+
+  langList = [
+    {
+      name: "English",
+      level: "Advanced"
+    },
+    {
+      name: "Portuguese",
+      level: "Native"
+    },
+    {
+      name: "German",
+      level: "Beginner"
     }
   ];
 

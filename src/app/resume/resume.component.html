@@ -1,10 +1,11 @@
 <app-navbar></app-navbar>
-<div class="view jarallax main-container" style="height: 100vh">
-  <img class="jarallax-img" src="../assets/images/main-background.jpg" />
+<div class="main-container" style="height: 100vh">
   <div>
     <h2>Resume</h2>
     <h1 data-text="Gabriel Madeira">Gabriel Madeira</h1>
-  </div>
+    <svg class="main-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
+    
+    </div>
 </div>
 
 <div class="container" id="about">
@@ -17,14 +18,8 @@
       class="col-10 offset-1 offset-sm-0 col-md-5 col-sm-8 text-justify about-span"
     >
       <span>Hey, I'm Gabriel,</span>
-      <span style="color: #2d80c4">Computer Science Exchange Student 💻</span>
-      <span>@ RPTU 🏛</span>
-      <span>located in Kaiserslautern - Germany 🇩🇪 </span>
-      <!-- <span>Hey, I'm Gabriel,</span>
       <span style="color: #2d80c4">Computer Science Student 💻</span>
       <span>@ Federal University of Rio Grande do Sul 🏛</span>
-      <span>located in Porto Alegre - RS 🇧🇷</span>
-       -->
       <!-- <a
         href="../assets/files/resume_gabrielmadeira.pdf"
         target="_blank"
@@ -32,6 +27,7 @@
       >
         <span style="font-size: 14px; display: inline"> Resume</span></a
       > -->
+      <div>
       <a
         href="https://www.linkedin.com/in/gabriel-madeira"
         target="_blank"
@@ -47,11 +43,7 @@
         target="_blank"
         class="fa fa-github"
       ></a>
-      <a
-        href="https://www.instagram.com/gabr.madeira"
-        target="_blank"
-        class="fa fa-instagram"
-      ></a>
+      </div>
     </div>
   </div>
 </div>
@@ -62,7 +54,7 @@
   <app-card
     imgUrl="assets/images/dfki.png"
     imgLink="https://www.dfki.de/"
-    title="Exchange Student"
+    cardTitle="Exchange Student"
     institution="German Research Center for Artificial Intelligence (DFKI)"
     period="April 2023 - March 2024"
     location="Kaiserslautern - Germany"
@@ -71,7 +63,7 @@
   <app-card
     imgUrl="assets/images/inf.png"
     imgLink="https://www.inf.ufrgs.br/site/en/"
-    title="Undergraduate Researcher"
+    cardTitle="Undergraduate Researcher"
     institution="Computer Graphics and Image Processing Research Group"
     period="June 2022 - November 2022"
     location="Porto Alegre - RS - Brazil"
@@ -83,7 +75,7 @@
   <app-card
     imgUrl="assets/images/nelogica.png"
     imgLink="https://www.nelogica.com.br/"
-    title="Software Development Intern (Back-end)"
+    cardTitle="Software Development Intern (Back-end)"
     institution="Nelogica"
     period="October 2021 - March 2022"
     location="Porto Alegre - RS - Brazil"
@@ -97,7 +89,7 @@
   <app-card
     imgUrl="assets/images/nelogica.png"
     imgLink="https://www.nelogica.com.br/"
-    title="Software Development Intern (Front-end)"
+    cardTitle="Software Development Intern (Front-end)"
     institution="Nelogica"
     period="February 2021 - September 2021"
     location="Porto Alegre - RS - Brazil"
@@ -111,8 +103,8 @@
   ></app-card>
   <app-card
     imgUrl="assets/images/ginfo.png"
-    imgLink="https://www.instagram.com/ginfo_cflex/"
-    title="Undergraduate Researcher"
+    imgLink=""
+    cardTitle="Undergraduate Researcher"
     institution="Information Management Research Group - FURG"
     period="April 2018 - July 2020"
     location="Rio Grande - RS - Brazil"
@@ -132,8 +124,8 @@
   ></app-card>
   <app-card
     imgUrl="assets/images/qwertyp.png"
-    imgLink="https://www.qwerty.com.br/"
-    title="Computer Technician"
+    imgLink=""
+    cardTitle="Computer Technician"
     institution="Qwerty News Portal"
     period="April 2016 - July 2017"
     location="Dom Pedrito - RS - Brazil"
@@ -146,7 +138,7 @@
   <app-card
     imgUrl="assets/images/rptu.png"
     imgLink="https://rptu.de/"
-    title="Computer Science Exchange Student"
+    cardTitle="Computer Science Exchange Student"
     institution="Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau"
     period="April 2023 - March 2024"
     location="Kaiserslautern - Germany"
@@ -155,18 +147,18 @@
   <app-card
     imgUrl="assets/images/ufrgs.png"
     imgLink="http://www.ufrgs.br/english/home"
-    title="Computer Science Undergraduate"
+    cardTitle="Computer Science Undergraduate"
     institution="Federal University of Rio Grande do Sul"
     period="March 2020 - Present"
     location="Porto Alegre - RS - Brazil"
-    description="GPA: 9.30/10.00"
+    description="GPA: 9.40/10.00"
   ></app-card>
   <app-card
     imgUrl="assets/images/furg.png"
     imgLink="https://www.furg.br/en/"
-    title="Computer Engineering Undergraduate"
+    cardTitle="Computer Engineering Undergraduate"
     institution="Federal University of Rio Grande (FURG)"
-    period="March 2019 - Dezember 2019"
+    period="March 2019 - December 2019"
     location="Rio Grande - RS - Brazil"
     description="GPA: 9.40/10.00<br>
     (university and course transfer after one year)"
@@ -174,19 +166,19 @@
   <app-card
     imgUrl="assets/images/furg.png"
     imgLink="https://www.furg.br/en/"
-    title="Information Systems Undergraduate"
+    cardTitle="Information Systems Undergraduate"
     institution="Federal University of Rio Grande (FURG)"
-    period="March 2018 - Dezember 2018"
+    period="March 2018 - December 2018"
     location="Rio Grande - RS - Brazil"
     description="GPA: 9.62/10.00<br>
     (course transfer after one year)"
   ></app-card>
   <app-card
     imgUrl="assets/images/qwertye.png"
-    imgLink="https://escola.qwerty.com.br/"
-    title="Technical course - Computing Technician"
+    imgLink=""
+    cardTitle="Technical course - Computing Technician"
     institution="Qwerty Escola"
-    period="March 2015 - Dezember 2016"
+    period="March 2015 - December 2016"
     location="Dom Pedrito - RS - Brazil"
     description="GPA: 9.32/10.00"
   ></app-card>
@@ -196,5 +188,12 @@
   <div class="col text-center section-title">SKILLS</div>
   <div class="col text-center">
     <app-skills></app-skills>
+  </div>
+</div>
+
+<div class="container-fluid" id="projects" style="background-color: #dadada;">
+  <div class="col text-center section-title">PROJECTS</div>
+  <div class="col">
+    <app-projects></app-projects>
   </div>
 </div>

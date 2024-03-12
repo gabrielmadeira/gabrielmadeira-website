@@ -2,17 +2,33 @@
   <!-- <div class="col-md-4">
     <div class="content-interests"></div>
   </div> -->
-  <div class="col-md-6 col-10 offset-1 offset-md-0 text-center star-skills">
-    <h2>Languages</h2>
-    <div class="row" *ngFor="let skill of langList">
-      <div class="col">{{ skill.name }}</div>
-      <div class="col">{{ skill.time }}</div>
+  <div class="col-md-4 col-10 offset-1 offset-md-0 text-center star-skills">
+    <h2>Programming Languages</h2>
+    <div class="row" *ngFor="let skill of programLangList">
+      <div class="col" style="text-align: right;">{{ skill.name }}</div>
+      <div class="col" style="text-align: left;">{{ skill.time }}</div>
     </div>
   </div>
-  <div class="col-md-6 col-10 offset-1 offset-md-0 text-center star-skills">
+  <div class="col-md-4 col-10 offset-1 offset-md-0 text-center star-skills">
     <h2>Technologies</h2>
     <div class="row" *ngFor="let skill of techList">
       <div class="col">{{ skill.name }}</div>
     </div>
   </div>
+  <div class="col-md-4 col-10 offset-1 offset-md-0 text-center star-skills">
+    <h2>Languages</h2>
+    <div class="row" *ngFor="let skill of langList">
+      <div class="col" style="text-align: right;">{{ skill.name }}</div>
+      <div class="col" style="text-align: left;">{{ skill.level }}</div>
+    </div>
+  </div>
 </div>
+<!-- <div class="row">
+  <div class="col">
+    <h2>Languages</h2>
+    <div class="row" *ngFor="let skill of langList">
+      <div class="col" style="text-align: right;">{{ skill.name }}</div>
+      <div class="col" style="text-align: left;">{{ skill.level }}</div>
+    </div>
+  </div>
+</div> -->

@@ -19,6 +19,12 @@
 }
 
 @media (min-width: 992px) {
+    .text-responsive-institution {
+        font-size: 26px;
+    }
+    .text-responsive-title {
+        font-size: 22px;
+    }
     .text-responsive-general {
         font-size: 18px;
     }
@@ -51,7 +57,7 @@
         width: 90%;
     }
     .card-img {
-        width: 250px;
+        width: 170px;
     }
 }
 

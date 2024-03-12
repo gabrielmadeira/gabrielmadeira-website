@@ -1,0 +1,23 @@
+<!-- <div markdown [src]="'https://raw.githubusercontent.com/gabrielmadeira/INFinityDrive/main/README.md'"></div> -->
+<div class="card mt-5 mb-5 project" id="{{ githubRepositoryMetadata['name'] }}">
+  <div class="card-header">
+    <div class="mb-3">
+      <a target="_blank" style="font-weight: 700;" href="{{ githubRepositoryUrl }}">{{ githubRepositoryMetadata['name'] }}</a>
+      <span *ngFor="let item of stack; let i = index" class="badge badge-{{ i%2 == 0 ? 'primary' : 'secondary'}} ml-2">{{ item }}</span>
+      <!-- <span class="badge badge-secondary ml-2">HTML</span> -->
+      
+      <button style="float:inline-end" class="btn btn-link" (click)="collapseButtonClick()" data-toggle="collapse" [attr.data-target]="'#collapse-'+githubRepositoryMetadata['name']" aria-expanded="true" [attr.aria-controls]="'collapse-'+githubRepositoryMetadata['name']">
+        {{ collapsed ? "Expand" : "Collapse" }}
+      </button>
+      <!-- <i class="fa fa-html5 ml-2"> aaa</i> -->
+    </div>
+    <div >
+      {{ githubRepositoryMetadata['description'] }}
+    </div>
+  </div>
+  <div #collapseDiv id="collapse-{{ githubRepositoryMetadata['name'] }}" class="collapse" [attr.aria-labelledby]="'heading-'+githubRepositoryMetadata['name']">
+    <div class="card-body">
+      <markdown class="markdown" #markdownComponent [src]="githubRepositoryRawUrl ? githubRepositoryRawUrl + 'README.md' : ''" (load)="fixImagesUrl(githubRepositoryRawUrl)"></markdown>
+    </div>
+  </div>
+</div>
