@@ -10,11 +10,7 @@ export class SkillsComponent implements OnInit {
 
   programLangList = [
     {
-      name:"JavaScript", 
-      time: "2 years"
-    },
-    {
-      name:"SQL", 
+      name:"JavaScript / TypeScript", 
       time: "2 years"
     },
     {
@@ -22,24 +18,27 @@ export class SkillsComponent implements OnInit {
       time: "2 years"
     },
     {
-      name:"C/C++", 
+      name:"Java", 
       time: "1 year"
+    },
+    {
+      name:"C++", 
+      time: "1 year"
+    },
+    {
+      name:"SQL", 
+      time: "2 years"
     },
     {
       name:"PHP", 
       time: "1 year"
-    },
-    {
-      name:"Java", 
-      time: "6 months"
-    },
-    {
-      name:"Delphi", 
-      time: "4 months"
     }
   ];
 
   techList = [
+    {
+      name:"Angular", 
+    },
     {
       name:"Vue.js", 
     },
@@ -56,13 +55,13 @@ export class SkillsComponent implements OnInit {
       name:"Docker", 
     },
     {
+      name:"Microsoft Azure", 
+    },
+    {
       name:"Scikit-Learn, Tensorflow", 
     },
     {
       name:"HTML, CSS", 
-    },
-    {
-      name:"Angular", 
     },
     {
       name:"Qt", 

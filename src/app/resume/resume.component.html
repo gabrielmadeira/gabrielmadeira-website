@@ -18,8 +18,7 @@
       class="col-10 offset-1 offset-sm-0 col-md-5 col-sm-8 text-justify about-span"
     >
       <span>Hey, I'm Gabriel,</span>
-      <span style="color: #2d80c4">Computer Science Student 💻</span>
-      <span>@ Federal University of Rio Grande do Sul 🏛</span>
+      <span>a <a style="color: #2d80c4">Software Engineer 💻</a></span>
       <!-- <a
         href="../assets/files/resume_gabrielmadeira.pdf"
         target="_blank"
@@ -52,13 +51,29 @@
   <div class="col text-center section-title">EXPERIENCES</div>
   <div class="col text-center subsection-title">Work Experience</div>
   <app-card
+    imgUrl="assets/images/aprix.png"
+    imgLink="https://aprix.com.br/home-en/"
+    cardTitle="Software Engineer"
+    institution="Aprix"
+    period="May 2024 - Present"
+    location="Porto Alegre - Brazil"
+    description="
+    <b>Technology stack:</b> Python, Pandas, Angular, Docker, PostgreSQL, Microsoft Azure.
+  "
+  ></app-card>
+  <app-card
     imgUrl="assets/images/dfki.png"
     imgLink="https://www.dfki.de/"
     cardTitle="Exchange Student"
     institution="German Research Center for Artificial Intelligence (DFKI)"
     period="April 2023 - March 2024"
     location="Kaiserslautern - Germany"
-    description="Working in the Smart Data & Knowledge Services department as part of an exchange program."
+    description="
+    • Designed and developed a visualization tool for the exploration of generic and large knowledge graphs through filtering, exploration, and grouping features.<br>
+    • Implemented the tool module in three different knowledge graph environments: DBpedia and two private knowledge bases.<br>
+    • Conducted a 10-user evaluation where the tool outperformed the baseline in one of the two defined user tasks and reached a 79.5 score in the System Usability Scale method.<br>
+    <b>Technology stack:</b> Java, Spring Boot, Vue.js, D3.js, SPARQL.
+  "
   ></app-card>
   <app-card
     imgUrl="assets/images/inf.png"
@@ -66,39 +81,32 @@
     cardTitle="Undergraduate Researcher"
     institution="Computer Graphics and Image Processing Research Group"
     period="June 2022 - November 2022"
-    location="Porto Alegre - RS - Brazil"
+    location="Porto Alegre - Brazil"
     description="
-    • Advised by Prof. <a href='https://www.inf.ufrgs.br/~oliveira/' target='_blank'><b>Manuel M. Oliveira</b></a>. <br>
-    • Study of deep learning techniques applied to image classification and segmentation.
+    • Executed performance tests of existing trained classification/segmentation models (cytology field) fine-tuning with the group’s private oral cell image dataset.<br>
+    • Studied deep learning techniques applied to image classification and segmentation.<br>
+    <b>Technology stack:</b> TensorFlow, Python.
     "
   ></app-card>
   <app-card
     imgUrl="assets/images/nelogica.png"
     imgLink="https://www.nelogica.com.br/"
-    cardTitle="Software Development Intern (Back-end)"
+    cardTitle="Software Development Intern"
     institution="Nelogica"
-    period="October 2021 - March 2022"
-    location="Porto Alegre - RS - Brazil"
+    period="February 2021 - March 2022"
+    location="Porto Alegre - Brazil"
     description="
-    • Implementation of a database event proxy REST API service, in the OpenAPI Specification, almost zeroing the rate of accumulated DB commands in the message service for clients. <br>
-    • Implementation of a service dynamic installer, making the process of creating specific new instances easier. <br>
-    • Implementation of replaceable tags feature in the body of a message in the notification service for clients. <br>
-    • Technologies: Delphi.
-    "
-  ></app-card>
-  <app-card
-    imgUrl="assets/images/nelogica.png"
-    imgLink="https://www.nelogica.com.br/"
-    cardTitle="Software Development Intern (Front-end)"
-    institution="Nelogica"
-    period="February 2021 - September 2021"
-    location="Porto Alegre - RS - Brazil"
-    description="
-    • Helping to develop a web platform to operate in the financial market. <br>
-    • Creation of a virtual wallet component, which simulates a real exchange wallet. <br>
-    • Login screen loading optimization, using asynchronous imports in JavaScript, ~47% reduction in file size required for the login screen. <br>
-    • Asset conversion method from several different quote sources using JavaScript promises. <br>
-    • Technologies: Vue.js, JavaScript, CSS, HTML.
+    <b>Back-end team (October 2021 – March 2022):</b><br>
+    • Implemented a database event proxy REST API service, in the OpenAPI Specification, almost zeroing the rate of accumulated database commands in the notification service.<br>
+    • Created a service dynamic installer, making the process of creating specific new instances easier.<br>
+    • Implemented the replaceable tags feature in the body of a message in the notification service for clients.<br>
+    • <b>Technology stack:</b> Delphi.<br>
+
+    <b>Front-end team (February 2021 – September 2021):</b><br>
+    • Developed a simulated exchange wallet component for the crypto trading web platform, supporting virtual positions.<br>
+    • Optimized the login screen loading with JavaScript asynchronous imports, reducing its required file size by 47%.<br>
+    • Designed an asset conversion method from several different quote sources using JavaScript promises.<br>
+    • <b>Technology stack:</b> Vue.js, JavaScript, CSS, HTML.
     "
   ></app-card>
   <app-card
@@ -107,14 +115,13 @@
     cardTitle="Undergraduate Researcher"
     institution="Information Management Research Group - FURG"
     period="April 2018 - July 2020"
-    location="Rio Grande - RS - Brazil"
+    location="Rio Grande - Brazil"
     description="
-    • Advised by Prof. <a href='https://scholar.google.com/citations?user=DF7aOYMAAAAJ&hl=en' target='_blank'><b>Eduardo Borges</b></a>.<br>
-    • Cleaning anomalies in a database of more than 500 thousand rows with Postgresql. <br>
-    • Development of a recursive algorithm forthe visualization of academic trees. <br>
-    • Developed <a href='http://thegoldtree.c3.furg.br' target='_blank'><b>The Gold Tree</b></a>, a web tool for academic genealogy analysis using HTML, CSS, Javascript and Postgresql. <br>
-    • Study of several machine learning technical algorithms. <br>
-    • The Nearest Centroid algorithm and TF-IDF method were used to model an advisor recommendation system. <br>
+    • Applied the Nearest Centroid algorithm and TF-IDF method to build an advisor recommendation system.<br>
+    • Developed The Gold Tree, a web tool for academic genealogy analysis.<br>
+    • Cleaned anomalies in a database with more than 500 thousand rows.<br>
+    • Received a research scholarship.<br>
+    • <b>Technology stack:</b>  PostgreSQL, JavaScript, HTML, CSS, Python, Scikit-Learn.
     <br>
     <b>Publications:</b> <br>
     <a href='https://www.researchgate.net/publication/333435352_The_Gold_Tree_An_Information_System_for_Analyzing_Academic_Genealogy' target='_blank'><b>[1]</b></a> Madeira, G., Borges, E.N., Baranano, M., Nascimento, P.K., Lucca, G., de Fatima Maia, M., Santos, H.S. and Dimuro, G.P., 2019. The Gold Tree: An Information System for Analyzing Academic Genealogy. In Proceedings of the ICEIS 2019 (pp. 114-120). <br>
@@ -128,59 +135,74 @@
     cardTitle="Computer Technician"
     institution="Qwerty News Portal"
     period="April 2016 - July 2017"
-    location="Dom Pedrito - RS - Brazil"
+    location="Dom Pedrito - Brazil"
     description=" 
-    • Developed a Arrival and departure control system using HTML, CSS, Javascript, PHP, MySql. <br>
-    • Developed a Transparency portal using HTML, CSS, Javascript, PHP, MySql. <br>
-    • Video editing and art creation for the news portal."
+    • Developed an arrival and departure control web system for internal employees.<br>
+    • Developed a web transparency portal.<br>
+    • <b>Technology stack:</b> PHP, HTML, CSS, JavaScript, MySQL.
+    "
   ></app-card>
   <div class="col text-center subsection-title">Education</div>
   <app-card
+    imgUrl="assets/images/ufrgs.png"
+    imgLink="http://www.ufrgs.br/english/home"
+    cardTitle="Bachelor's degree, Computer Science"
+    institution="Federal University of Rio Grande do Sul"
+    period="March 2020 - August 2024"
+    location="Porto Alegre - Brazil"
+    description="GPA: 9.40/10.00 - Magna cum Laude<br>
+    5th best Brazilian university according to the Times Higher Education’s World University Ranking 2024.
+    "
+  ></app-card>
+  <app-card
     imgUrl="assets/images/rptu.png"
     imgLink="https://rptu.de/"
-    cardTitle="Computer Science Exchange Student"
+    cardTitle="Exchange Program, Computer Science"
     institution="Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau"
     period="April 2023 - March 2024"
     location="Kaiserslautern - Germany"
     description="Attending Master's classes as part of an exchange program."
   ></app-card>
   <app-card
-    imgUrl="assets/images/ufrgs.png"
-    imgLink="http://www.ufrgs.br/english/home"
-    cardTitle="Computer Science Undergraduate"
-    institution="Federal University of Rio Grande do Sul"
-    period="March 2020 - Present"
-    location="Porto Alegre - RS - Brazil"
-    description="GPA: 9.40/10.00"
-  ></app-card>
-  <app-card
     imgUrl="assets/images/furg.png"
     imgLink="https://www.furg.br/en/"
-    cardTitle="Computer Engineering Undergraduate"
+    cardTitle="Bachelor's degree, Computer Engineering"
     institution="Federal University of Rio Grande (FURG)"
     period="March 2019 - December 2019"
-    location="Rio Grande - RS - Brazil"
+    location="Rio Grande - Brazil"
     description="GPA: 9.40/10.00<br>
     (university and course transfer after one year)"
   ></app-card>
   <app-card
     imgUrl="assets/images/furg.png"
     imgLink="https://www.furg.br/en/"
-    cardTitle="Information Systems Undergraduate"
+    cardTitle="Bachelor's degree, Information Systems"
     institution="Federal University of Rio Grande (FURG)"
     period="March 2018 - December 2018"
-    location="Rio Grande - RS - Brazil"
+    location="Rio Grande - Brazil"
     description="GPA: 9.62/10.00<br>
     (course transfer after one year)"
   ></app-card>
   <app-card
     imgUrl="assets/images/qwertye.png"
     imgLink=""
-    cardTitle="Technical course - Computing Technician"
+    cardTitle="Technical course, Computing Technician"
     institution="Qwerty Escola"
     period="March 2015 - December 2016"
-    location="Dom Pedrito - RS - Brazil"
-    description="GPA: 9.32/10.00"
+    location="Dom Pedrito - Brazil"
+    description="GPA: 9.32/10.00<br>
+    Some of the topics covered:<br>
+
+    • Logic and Programming Languages
+    • Operating Systems
+    • Hardware
+    • Interpretation of Computer System Specifications
+    • Databases
+    • Programming Logic
+    • Operating System
+    • Types of User Interfaces
+    • Designing, Analyzing, and Planning Software Development
+    "
   ></app-card>
 </div>
 
